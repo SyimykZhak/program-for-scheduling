@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="adminpanel.list3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:adminpanel"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="850">
+    <UserControl.Resources>
+        <ResourceDictionary Source="style.xaml"/>
+    </UserControl.Resources>
+    <Grid Background="White">
+
+        <DataGrid   Name="phonesGrid" Style="{DynamicResource cdas}" ItemsSource="{Binding}" AutoGenerateColumns="True"  Height="400" Width="600" >
+           
+        </DataGrid>
+    </Grid >
+</UserControl>

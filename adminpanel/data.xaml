@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="adminpanel.data"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:adminpanel"
+             mc:Ignorable="d" 
+
+             d:DesignHeight="550" d:DesignWidth="850" Loaded="WINDOW_LOADED">
+    
+    <Grid Background="White">
+
+
+
+
+
+
+        <Canvas>
+            <Image Source="/image/joanna-kosinska-7ACuHoezUYk-unsplash.jpg" MinWidth="1000" MaxWidth="1300" Canvas.Top="4" />
+
+
+            <Border CornerRadius="360" BorderBrush="#FF0070B8" BorderThickness="5" Height="176" Width="176" Canvas.Left="217" Canvas.Top="119" Background="White" >
+                <StackPanel WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Label Foreground="Black" Margin="0 15 0 0" FontSize="20" HorizontalAlignment="Center" FontFamily="Stencil" FontWeight="Bold" >ВРЕМЯ</Label>
+                    <StackPanel Background="White" Margin="0 0 0 0" Width="150" Height="50">
+                        <Label Name="clock" Foreground="#FF0070B8" Margin="0 0 0 0" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Stencil" FontWeight="Bold" >00:00:00</Label>
+                    </StackPanel>
+                    <StackPanel Background="White" Margin="0 0 0 5" Width="130" Height="30">
+                        <Label Name="clock2" Foreground="Black" Margin="0 0 0 0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" >12.10.2020</Label>
+                    </StackPanel>
+                   
+                </StackPanel>
+            </Border>
+            <!--<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="poasdk" Height="60" Width="222" FontSize="40" FontWeight="Bold" FontFamily="Sitka Text" Canvas.Left="188" Canvas.Top="100" TextAlignment="Center" ></TextBlock>-->
+            <Calendar  Style="{DynamicResource DateTimeCalendar}" x:Name="calendar1" FirstDayOfWeek="Monday" SelectionMode="MultipleRange"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib" Canvas.Top="119" Height="176" Width="212" Canvas.Left="415">
+
+            </Calendar>
+        </Canvas>
+    </Grid>
+</UserControl>
